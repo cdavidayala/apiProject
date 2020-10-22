@@ -1,0 +1,9 @@
+table {
+    width: 100%;
+}
+
+.title {
+  font-weight: bold;
+  padding: 30px;
+  text-align: center;
+}

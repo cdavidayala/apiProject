@@ -1,0 +1,26 @@
+<div>
+  <div class="title">
+  <h1>  Informacion Pelicula</h1>
+   </div>
+  <div class="main">
+    <label for="title">Name: {{pelicula.title}}</label>
+    <br>
+    <label for="director">director: {{pelicula.director}}</label>
+    <br>
+    <label for="productor">productor: {{pelicula.producer}}</label>
+    <br>
+    <label for="episodio">episodio: {{pelicula.episode}}</label>
+    <br>
+    <label for="opening">opening: {{pelicula.opening_crawl}}</label>
+  </div>
+  <div class="title">
+    <h1>Lista de personajes</h1>
+  </div>
+  <div>
+    <mat-list>
+      <mat-list-item *ngFor="let personaje of pelicula.characters"(click)="getPersonaje(personaje)" >
+        <a href="/personaje">{{personaje}} </a>
+         </mat-list-item>
+     </mat-list>
+  </div>
+</div>

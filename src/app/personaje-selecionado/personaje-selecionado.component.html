@@ -1,0 +1,31 @@
+<div>
+  <div class="title">
+  <h1>  Informacion personaje</h1>
+   </div>
+  <div class="main">
+    <label for="name">Name: {{people.name}}</label>
+    <br>
+    <label for="name">heigth: {{people.height}}</label>
+    <br>
+    <label for="name">Mass: {{people.mass}}</label>
+    <br>
+    <label for="name">Name: {{people.hair_color}}</label>
+    <br>
+    <label for="name">Name: {{people.eye_color}}</label>
+    <br>
+    <label for="name">Name: {{people.gender}}</label>
+    <br>
+    <label for="name">Name: {{people.birth_year}}</label>
+  </div>
+
+  <div class="title">
+    <h1>Lista de peliculas</h1>
+  </div>
+  <div>
+    <mat-list>
+      <mat-list-item *ngFor="let film of people.films"(click)="getPelicula(film)" >
+        <a href="/pelicula">{{film}} </a>
+         </mat-list-item>
+     </mat-list>
+  </div>
+</div>
